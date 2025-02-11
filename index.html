@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario para Jugadores de Béisbol</h1>
+        <form action="#" method="post">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="6" max="45" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="numero">Número de Camiseta:</label>
+            <input type="number" id="numero" name="numero" min="0" max="99" required>
+
+            <label for="posicion">Posición:</label>
+            <select id="posicion" name="posicion" required>
+                <option value="Pitcher">Pitcher</option>
+                <option value="Catcher">Catcher</option>
+                <option value="Infielder">Infielder</option>
+                <option value="Outfielder">Outfielder</option>
+            </select>
+
+            <label>Batea con:</label>
+            <div class="radio-group">
+                <input type="radio" id="bateo-derecha" name="bateo" value="Derecha" required>
+                <label for="bateo-derecha">Derecha</label>
+
+                <input type="radio" id="bateo-izquierda" name="bateo" value="Izquierda">
+                <label for="bateo-izquierda">Izquierda</label>
+            </div>
+
+            <label>Lanza con:</label>
+            <div class="radio-group">
+                <input type="radio" id="lanzamiento-derecha" name="lanzamiento" value="Derecha" required>
+                <label for="lanzamiento-derecha">Derecha</label>
+
+                <input type="radio" id="lanzamiento-izquierda" name="lanzamiento" value="Izquierda">
+                <label for="lanzamiento-izquierda">Izquierda</label>
+            </div>
+
+            <button type="submit">Registrar Jugador</button>
+        </form>
+    </div>
+</body>
+</html>
